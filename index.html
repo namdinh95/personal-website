@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Homepage</title>
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="5">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="my-navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#school">School</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid section" id="about">
+      <div class="row">
+        <div class="col-md-8" id="about-info">
+          <h3 class="text-center info" id="profile-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper urna ac ultrices pharetra. In blandit, odio et bibendum dictum, urna enim semper lorem, id suscipit ipsum diam eget neque. Fusce est tellus, porta tincidunt tortor sed, viverra mattis est. Mauris fermentum odio scelerisque nisl ultricies viverra. Vivamus semper at libero eget interdum. Ut dignissim mollis varius. Praesent vitae scelerisque nulla. Sed non mi felis.
+
+            Maecenas posuere mi sed accumsan ullamcorper. Quisque iaculis auctor enim ut auctor. Praesent pharetra at sapien at convallis. Nulla id elit vehicula, molestie enim quis, consequat nunc. Donec urna nisi, tempor nec purus eget, euismod convallis leo. Quisque egestas euismod lacus quis elementum. Vestibulum dignissim urna sollicitudin, euismod neque eget, malesuada turpis. Aenean ac nibh ac tellus dignissim porta. Ut pretium diam sit amet sollicitudin dictum. Cras ut mollis nibh. In finibus ullamcorper condimentum.
+          </h3>
+        </div>
+        <div class="col-md-4" id="about-photo">
+          <img class="img-responsive img-circle photo" src="https://avatars3.githubusercontent.com/u/9978161?v=3&s=460" alt="My profile photo">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid section" id="school">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-responsive img-circle photo" id="school-icon" src="https://pbs.twimg.com/profile_images/459765099121500160/wU7maVJ0.jpeg" alt="School Icon">
+        </div>
+        <div class="col-md-8">
+          <h3 class="text-center info" id="school-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper urna ac ultrices pharetra. In blandit, odio et bibendum dictum, urna enim semper lorem, id suscipit ipsum diam eget neque. Fusce est tellus, porta tincidunt tortor sed, viverra mattis est. Mauris fermentum odio scelerisque nisl ultricies viverra. Vivamus semper at libero eget interdum. Ut dignissim mollis varius. Praesent vitae scelerisque nulla. Sed non mi felis.
+
+            Maecenas posuere mi sed accumsan ullamcorper. Quisque iaculis auctor enim ut auctor. Praesent pharetra at sapien at convallis. Nulla id elit vehicula, molestie enim quis, consequat nunc. Donec urna nisi, tempor nec purus eget, euismod convallis leo. Quisque egestas euismod lacus quis elementum. Vestibulum dignissim urna sollicitudin, euismod neque eget, malesuada turpis. Aenean ac nibh ac tellus dignissim porta. Ut pretium diam sit amet sollicitudin dictum. Cras ut mollis nibh. In finibus ullamcorper condimentum.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid section" id="projects">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="text-center info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper urna ac ultrices pharetra. In blandit, odio et bibendum dictum, urna enim semper lorem, id suscipit ipsum diam eget neque. Fusce est tellus, porta tincidunt tortor sed, viverra mattis est. Mauris fermentum odio scelerisque nisl ultricies viverra. Vivamus semper at libero eget interdum. Ut dignissim mollis varius. Praesent vitae scelerisque nulla. Sed non mi felis.
+          </h3>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-circle photo" id="github-photo" src="http://image005.flaticon.com/25/svg/25/25231.svg" alt="Github Icon">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid section" id="contact">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-center">Contact Me</h2>
+          <br>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputName" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputComment" class="col-sm-2 control-label">Comment</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="inputComment" placeholder="Comment" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-center">Social Networks</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
