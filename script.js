@@ -21,4 +21,20 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  // Get form values - client side test
+  $("#submitContact").click(function() {
+    var name = $("#inputName").val();
+    var comment = $("#inputComment").val();
+    var email = $("#inputEmail").val();
+
+    // Check email's validity and blank comment
+    if (email.search("@") < 0 || $("#inputComment").val() == "") {
+      alert("Please enter proper email and/or comment.");
+      return;
+    }
+
+    
+
+  });
 });
