@@ -99,23 +99,23 @@
         <div class="col-md-6">
           <h2 class="text-center">Contact Me</h2>
           <br>
-          <form class="form-horizontal">
+          <form method="GET" enctype="text/plain" class="form-horizontal" id="sendEmail">
             <div class="form-group">
               <label for="inputName" class="col-sm-2 control-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <input type="text" class="form-control" id="inputName" placeholder="Name" name="Name">
               </div>
             </div>
             <div class="form-group">
               <label for="inputEmail" class="col-sm-2 control-label">Email</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="Email">
               </div>
             </div>
             <div class="form-group">
               <label for="inputComment" class="col-sm-2 control-label">Comment</label>
               <div class="col-sm-10">
-                <textarea class="form-control" id="inputComment" placeholder="Comment" rows="3"></textarea>
+                <textarea class="form-control" id="inputComment" placeholder="Comment" name="Content" rows="3"></textarea>
               </div>
             </div>
             <div class="form-group">

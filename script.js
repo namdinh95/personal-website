@@ -34,7 +34,11 @@ $(document).ready(function(){
       return;
     }
 
-    
-
+    // Mask email address from spam
+    var myUserName = "nam.dinhviet";
+    var myDomain = "gmail.com";
+    $("#sendEmail").attr("action", "mailto:" + myUserName + "@" + myDomain);
+    // Remove it from the HTML document
+    // $("#sendEmail").removeAttr("action");
   });
 });
