@@ -21,24 +21,24 @@ $(document).ready(function(){
       });
     } // End if
   });
-
-  // Get form values - client side test
   $("#submitContact").click(function() {
-    var name = $("#inputName").val();
-    var comment = $("#inputComment").val();
-    var email = $("#inputEmail").val();
-
-    // Check email's validity and blank comment
-    if (email.search("@") < 0 || $("#inputComment").val() == "") {
-      alert("Please enter proper email and/or comment.");
+    event.preventDefault();
+    if (!$("#inputName").val()) {
+      $("#inputName").attr("placeholder", "Hey, Name is Required! :D");
+      return;
+    }
+    if (!$("#inputComment").val()) {
+      $("#inputComment").attr("placeholder", "Hey, Comment is Required! :D");
       return;
     }
 
-    // Mask email address from spam
-    var myUserName = "nam.dinhviet";
-    var myDomain = "gmail.com";
-    $("#sendEmail").attr("action", "mailto:" + myUserName + "@" + myDomain);
-    // Remove it from the HTML document
-    // $("#sendEmail").removeAttr("action");
+    var contactData = $("#sendEmail").serialize();
+    $.post({
+        url: "send-mail.php",
+        data: contactData,
+        success: function(data) {
+            $("#mail-status").html(data);
+        }
+    });
   });
 });

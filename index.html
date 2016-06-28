@@ -99,28 +99,31 @@
         <div class="col-md-6">
           <h2 class="text-center">Contact Me</h2>
           <br>
-          <form method="GET" enctype="text/plain" class="form-horizontal" id="sendEmail">
+          <form method="POST" enctype="text/plain" class="form-horizontal" id="sendEmail">
             <div class="form-group">
-              <label for="inputName" class="col-sm-2 control-label">Name</label>
+              <label for="inputName" class="col-sm-2 control-label">*Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" placeholder="Name" name="Name">
+                <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
               </div>
             </div>
             <div class="form-group">
-              <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+              <label for="inputEmail" class="col-sm-2 control-label">Email </label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="Email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
               </div>
             </div>
             <div class="form-group">
-              <label for="inputComment" class="col-sm-2 control-label">Comment</label>
+              <label for="inputComment" class="col-sm-2 control-label">*Comment</label>
               <div class="col-sm-10">
-                <textarea class="form-control" id="inputComment" placeholder="Comment" name="Content" rows="3"></textarea>
+                <textarea class="form-control" id="inputComment" placeholder="Comment" name="content" rows="3"></textarea>
               </div>
             </div>
             <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
+              <div class="col-sm-offset-2 col-sm-2">
                 <button type="submit" class="btn btn-default" id="submitContact">Send</button>
+              </div>
+              <div class="col-sm-8" >
+                <p id="mail-status"><i>* required field</i></p>
               </div>
             </div>
           </form>
