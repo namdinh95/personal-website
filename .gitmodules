@@ -1,0 +1,3 @@
+[submodule "RainEffect"]
+	path = RainEffect
+	url = https://github.com/namdinh95/RainEffect.git
