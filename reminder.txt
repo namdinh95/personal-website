@@ -1,0 +1,2 @@
+Edit canvas to get proper background image (all the little images). Blur them and stuff on Windows. 
+Type of rain is activated through data-weather of div. Hide those divs and use window.location.href = "#" to point to them based on weather API.
